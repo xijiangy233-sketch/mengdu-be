@@ -17,7 +17,7 @@ def handle_options():
     return '', 200
 
 # ================= 配置 DeepSeek API =================
-DEEPSEEK_API_KEY = "sk-bedbdebf71f048fb9c796c834ff640a9"   # 请替换成你自己的密钥
+DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")   # 请替换成你自己的密钥
 DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
 
 # ================= 梦缇斯（热情大姐姐）的 System Prompt =================
