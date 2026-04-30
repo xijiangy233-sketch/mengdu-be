@@ -15,7 +15,6 @@ def after_request(response):
 @app.route('/interpret', methods=['OPTIONS'])
 def handle_options():
     return '', 200
-
 # ================= 配置 DeepSeek API =================
 DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")   # 请替换成你自己的密钥
 DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
